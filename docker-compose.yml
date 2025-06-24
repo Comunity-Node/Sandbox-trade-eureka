@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  sandbox-app:
+    build: .
+    container_name: sandbox-invest
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
+    networks:
+      - sandbox-net
+
+networks:
+  sandbox-net:
+    driver: bridge
