@@ -6,5 +6,5 @@ import (
 
 func main() {
     r := routes.SetupRouter()
-    r.Run(":3000")
+    r.Run(":8080")
 }
